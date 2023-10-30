@@ -1,5 +1,8 @@
 # brinalynn17-Cond-Profile-Card
 
+https://brinalynn17.github.io/brinalynn17-Cond-Profile-Card/
+
+
 Conditional Profile Card Generator
 Note: If you are working locally, make sure that you have node.js installed in your computer by typing in your terminal:
 
