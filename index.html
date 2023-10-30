@@ -3,31 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conditional Profile Card Generator</title>
-    
-</head>
-<body>
-    <form autocomplete="on">
-        
-        <label for="includeCover">Include Cover</label>
-        <select id="includeCover" name="includeCover">
-            <option><li>True</li></option>
-            <option><li>False</li></option>
-        </select>
-
-        <label for="fName">Name</label>
-        <input type="text" name="Name" id="fName">
-
-        <label for="lName">Last Name</label>
-        <input type="text" name="Last_Name" id="Name">
-
-        <span class="fName" id="First_Name"></span>
-        <span class="lName" id="Last_Name"></span>
-        <span class="includeCover" id="Include_Cover"></sapn>
-    </form>
-            
+    <title>SM Card Profile</title>
+    <link rel="stylesheet"  href="styles.css" />
     <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/8ba4bba75a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+</head>
 
+<body>
+    <div class="container">
+        <div class="menu">
+            <ul class="filters">
+                <li>
+                <label for="includeCover">Include Cover</label><br>
+                    <select class="picker" id="includeCover">
+                        <option value="">Select Cover</option>
+                        <option value="true">Yes</option>
+                        <option value="false">No</option>
+                    </select>
+                </li>
+                <li>
+                    <label>First Name</label><br>
+                    <input class="picker" id="fName" type="text" placeholder="Jane">
+                </li>
+                <li>
+                    <label>Last Name</label><br>
+                    <input class="picker" id="lName" type="text" placeholder="Doe">
+                </li>
+                <li>
+                    <label>S.M. Position</label><br>
+                    <select class="picker" id="positionIcons">
+                        <option value="">Select Position</option>
+                        <option value="right">Right</option>
+                        <option value="left">Left</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="facebook">Facebook</label><br>
+                    <input type="text" name="facebook" id="Facebook" placeholder="enter your page">
+                </li>
+                <li>
+                    <label for="instagram">Instagram</label><br>
+                    <input type="text" name="instagram" id="Instagram" placeholder="enter your page">
+                </li>
+                <li>
+                    <label for="linkedin">LinkedIn</label><br>
+                    <input type="text" name="linkedin" id="LinkedIn" placeholder="enter your page">
+                </li>
+                <li>
+                    <label for="twitter">Twitter</label><br>
+                    <input type="text" name="twitter" id="Twitter" placeholder="enter your page">
+                </li>
+                <li>
+                    <label for="github">Github</label><br>
+                    <input type="text" name="github" id="Github" placeholder="enter your page">
+                </li>
+                <li>
+                    <label for="role">Role</label><br>
+                    <select class="role" id="role" name="Role">
+                        <option>Select Role</option>
+                        <option>Analyst</option>
+                        <option>Cyber Security</option>
+                        <option>Web Developer</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="city">City</label><br>
+                    <select id="city" name="City">
+                        <option>Select City</option>
+                        <option>Miami</option>
+                        <option>Ft. Lauderdale</option>
+                        <option>Miramar</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="country">Country</label><br>
+                    <select id="country" name="Country">
+                        <option>Select Country</option>
+                        <option>United States</option>
+                        <option>Canada</option>
+                        <option>Ghana</option>
+                    </select>
+                </li>
+             </ul>    
+        </div>
+        
+            <div class="cards-wrapper">
+                <div class="card">
+                    <img id="coverImage" src="imgs/Cash4Life.jpg" alt="Cover Image" class="image-top" />
+                    <img src="imgs/Sabrina.jpg" alt="" class="profile-image" />
+                    <h1 class="fullname">Jane Doe</h1>
+                    <h2 class="job">On Vacation</h2>
+                    <h3 class="location">Somewhere in Africa</h3>
+
+                </div>
+                <ul class="social-icons">
+                    <li>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                    </li>
+                </ul>
+            </div>
+    </div>
 </body>
-
 </html>
